@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Basics -->
+  <title>Weather App | Real-Time Weather Forecast</title>
+  <meta name="description"
+    content="Get accurate, real-time weather forecasts for any city with our easy-to-use weather app. Check temperature, humidity, wind speed, and more." />
+  <meta name="keywords"
+    content="weather app, weather forecast, real-time weather, temperature, humidity, wind speed, Kathmandu weather, global weather" />
+  <meta name="author" content="Bibas Yonghang" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://bibasyonghang.github.io/weather-forecast/" />
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:title" content="Weather App | Real-Time Weather Forecast" />
+  <meta property="og:description"
+    content="Get accurate, real-time weather forecasts for any city. Temperature, humidity, wind, and more instantly." />
+  <meta property="og:image" content="https://bibasyonghang.github.io/weather-forecast/social-media-image.png?v=1" />
+  <meta property="og:url" content="https://bibasyonghang.github.io/weather-forecast/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Weather App | Real-Time Weather Forecast" />
+  <meta name="twitter:description"
+    content="Check real-time weather for any city instantly. See temperature, humidity, wind speed, and more." />
+  <meta name="twitter:image" content="https://bibasyonghang.github.io/weather-forecast/social-media-image.png?v=1" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="stylee.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">Weather Forecast</h1>
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city name..." value="kathmandu" />
+      <button onclick="getWeather()">Get Weather</button>
+    </div>
+    <div id="weatherInfo" class="weather-card">
+      <h2 id="cityName" class="information"></h2>
+      <p id="temperature" class="information"></p>
+      <p id="description" class="information"></p>
+      <p id="humidity" class="information"></p>
+      <p id="wind" class="information"></p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="scriptt.js"></script>
+</body>
+
+</html>

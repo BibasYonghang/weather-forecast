@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to top right, #00b4db, #0083b0);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width:420px) {
+
+  .container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .heading {
+    color: #0083b0;
+    margin-bottom: 20px;
+    font-size: 39px;
+  }
+
+  .search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* input[type="text"] → targets only <input> elements with type="text"; 
+   useful to style text inputs separately from password, email, etc. */
+
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #0083b0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #0083b0;
+
+  }
+
+  input[type="text"]::placeholder {
+    color: #0083b0;
+  }
+
+  input[type="text"]:focus {
+    padding: 10px;
+    border: 2px solid #0083b0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #0083b0;
+    outline-style: none;
+  }
+
+  /* AUTOFILL TEXT COLOR IN CHROME AND EDGE */
+  input[type="text"]:-webkit-autofill {
+    -webkit-text-fill-color: #0083b0;
+    transition: background-color 5000s ease-in-out;
+  }
+
+  /* AUTOFILL TEXT COLOR IN SAFARI */
+  input[type="text"]:-moz-autofill {
+    -moz-text-fill-color: orange;
+  }
+
+
+  button {
+    background-color: #0083b0;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #006b92;
+  }
+
+  .weather-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    height: 200px;
+  }
+
+  .information {
+    margin-top: 9px;
+    margin-left: 52px;
+    font-size: 16px;
+    text-align: start;
+    color: #0083b0;
+  }
+
+  #cityName {
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width:419px) {
+
+  .container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 325px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .heading {
+    color: #0083b0;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  .search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* input[type="text"] → targets only <input> elements with type="text"; 
+   useful to style text inputs separately from password, email, etc. */
+
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #0083b0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #0083b0;
+    width: 140px;
+  }
+
+  input[type="text"]::placeholder {
+    color: #0083b0;
+  }
+
+  input[type="text"]:focus {
+    padding: 10px;
+    border: 2px solid #0083b0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #0083b0;
+    outline-style: none;
+  }
+
+  /* AUTOFILL TEXT COLOR IN CHROME AND EDGE */
+  input[type="text"]:-webkit-autofill {
+    -webkit-text-fill-color: #0083b0;
+    transition: background-color 5000s ease-in-out;
+  }
+
+  /* AUTOFILL TEXT COLOR IN SAFARI */
+  input[type="text"]:-moz-autofill {
+    -moz-text-fill-color: orange;
+  }
+
+
+  button {
+    background-color: #0083b0;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #006b92;
+  }
+
+  .weather-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    height: 200px;
+  }
+
+  .information {
+    margin-top: 9px;
+    margin-left: 25px;
+    font-size: 13px;
+    text-align: start;
+    color: #0083b0;
+  }
+
+  #cityName {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+}
